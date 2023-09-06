@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Mehal's Site">
+  <meta name="description" content="This is Mehal Kumar Portfolio Website">
+  <meta name="keywords" content="HTML, CSS, Mehal's Site">
+  <meta name="author" content="Mehal Kumar">
+
+  <!-- Open Graph  -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://mehalkumar.github.io/Portfolio.mk/">
+   <meta property="og:title" content="Mehsl Kumar - Portfolio Website">
+   <meta property="og:description" content="This is the Portfolio of a UI UX Designer - Mehal Kumar">
+   <meta property="og:image" content="https://ibb.co/3yBMB4S">
+  
+   <!-- Title -->
+   <title>Mehal's Site</title>
+
+ <!-- Stylesheet -->
+    <link rel="stylesheet" href="bottlestyle.css" type="text/css">
+
+ <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+ <!-- FAVICON -->
+    <link rel="icon" href="favicon.ico">
+
+<!-- JAVASCRIPT -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+</head>
+
+
+<body>
+
+ <!----- NAVBAR ----->
+  <div class="navbar">
+    <a class="navdp" href="/index.html"><img class="mehal" src="../images/dp.png" alt="Mehal-image"></a>
+    <ul class="navbar-list">
+      <li><a href="../Site.html">Home</a></li>
+      <li><a href="../PORTFOLIOWORK/portfolio.html">Portfolio</a></li>
+      <li><a href="../CV/cv.html">Resume</a></li>
+      <li><a href="../CONTACT ME/contactindex.html">Contact</a></li>
+    </ul>
+  </div>
+
+
+  <!----- MAIN ----->
+  <div class="main">
+    <!--Model Viewer side-->
+   
+   <div class="fixed-side">
+        <model-viewer src="./Assets/bottle.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.96" shadow-softness="0.81" exposure="0.81">
+        </model-viewer>
+   </div>
+
+     <!--Scrollable Content Side -->
+   <div class="scrollable-side">
+      <h1 class="Hbottle">Bottle Design</h1>
+      <div class="software">
+        <img src="./Assets/fusion.jpeg" alt="Fusion360Logo" width="25px">
+        <h3 class="contentpara">Autodesk Fusion360</h3>
+      </div>
+      <br>
+      <p>
+        Bottle Design for a friend who suffers from epilepsy and prefers All-in-One Products. This design includes all her needs such as a medicine compartment, key holder, fidgety sections,
+        and personalized name. A light bottle with a 24/7 cold water facility, which can also be converted into a cup, and a water measurer label inside.
+      </p>
+      <img class="colorBottle" src="./Assets/colorBottle.png" alt="Bottle Forms">
+
+      <!--Features of the Bottle-->
+      <h2>Features</h2>
+      <div class="fdiv">
+        <img src="./Assets/Features (1).png" alt="f1">
+        <img src="./Assets/Features (2).png" alt="f2">
+        <img src="./Assets/Features (3).png" alt="f3">
+        <img src="./Assets/Features (4).png" alt="f4">
+      </div>
+
+      <!--Ideation of the Bottle-->
+      <h2>Ideation</h2>
+      <img class="ideation" src=".//Assets/ideationBottle.png" alt="Bottle Ideation">
+      <br><br>
+      <br><br>
+
+      <!--Measurements of the Bottle-->
+      <h2>Measurement</h2>
+      <div>
+        <img class="measurement" src="./Assets/measurementBottle.png" alt="Main Measurements">
+      </div>
+      <br>
+      <div class="fdiv">
+        <div class="imgtext">
+            <p>
+                Maze, Glass covering the maze, Rod length and thickness, and the depression.
+            </p>
+            <br>
+            <img src="./Assets/m1.png" alt="m1img">
+        </div>
+        <div class="imgtext">
+            <p>
+                Calculating the approximate Water level, that is 50% of the V-shaped bottle
+            </p>
+            <br>
+            <img src="./Assets/m2.png" alt="m2img">
+        </div>
+        <div class="imgtext">
+            <p>
+                Calculating the measurement of the U-shaped lock and the container it fits in
+            </p>
+            <br>
+            <img src="./Assets/m3.png" alt="m3img" height="235px">
+        </div>
+        <div class="imgtext">
+            <p>
+                Calculating the radius and thickness of the medicine compartment
+            </p>
+            <br>
+            <img src="./Assets/m4.png" alt="m4img">
+        </div>
+    </div>
+    
+    <!--Video of the Bottle which contains all the close up shots of the Bottles-->
+    <h2>Play to see the Details</h2>
+    <div>
+    <br>
+    <p>if the video is not playing <a href="Assets/Bottle - Mehal.mp4">Click Here</a></p>
+    <br>
+    <video src="Assets/Bottle - Mehal.mp4"></video>
+    </div>
+    <br>
+
+    <!--Ending-->
+    <p>MEHAL KUMAR Product Design</p> 
+</div>
+    
+</body>
+</html>
