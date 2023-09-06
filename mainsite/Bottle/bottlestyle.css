@@ -1,0 +1,170 @@
+.main{ 
+    display: flex;
+    background-color: black;
+}
+
+/*---------------------Fixed Side-----------------------*/
+
+.fixed-side{
+    position: sticky;
+    top: 20px;
+    height: 90vh;
+}
+
+model-viewer{
+  height: 80vh;
+  width: 50vw;
+}
+
+/*---------------------Scrollable Side-----------------------*/
+
+.scrollable-side{
+    background-color: white;
+    padding: 0 5vw;
+}
+
+.Hbottle, h2{
+    padding: 3vh 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.software{
+    display: flex;
+}
+
+.contentpara{
+    padding: 0 3vh;
+
+}
+
+.colorBottle{
+    width: 40vw;
+}
+
+video{
+  width: 100%;
+}
+
+/*---------------------Ideation & Measurements-----------------------*/
+
+.fdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1vw;
+}
+
+.fdiv img{
+    width: 18vw;
+}
+
+.ideation, .measurement{
+    width: 40vw;
+}
+
+/*---------------------Change fdiv-----------------------*/
+
+@media screen and (max-width: 1040px){
+  .fdiv{
+    grid-template-columns: 1fr;
+}
+
+ .fdiv img{
+  width: 100%;
+ }
+}
+
+
+/* ---------------------NAVBAR CSS----------------------- */
+
+/* ULTIMATE */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 540px){
+  .navbar ul li{
+    line-height: 2.5;
+  }  
+}
+
+@media screen and (min-width: 540px){
+  .navbar ul li{
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1040px){
+  .mehal{
+    padding-bottom: 20px;
+  }
+  .navbar{
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1040px){
+  .navbar{
+    display: flex;
+  }
+}
+
+.mehal{
+  height: 60px;
+  cursor: pointer;
+}
+
+.navdp{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navbar-list{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navbar{
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 2vh 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 34);
+  z-index: 2;
+}
+
+.navbar ul li{
+  list-style: none;
+
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 1px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
