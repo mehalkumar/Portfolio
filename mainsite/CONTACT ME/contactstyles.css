@@ -1,0 +1,178 @@
+*{
+  text-align: center;
+}
+
+/* ---------------------NAVBAR CSS----------------------- */
+
+/* ULTIMATE */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+  }
+  
+  /* RESPONSIVENESS */
+  @media screen and (max-width: 540px){
+    .navbar ul li{
+      line-height: 2.5;
+    }  
+  }
+  
+  @media screen and (min-width: 540px){
+    .navbar ul li{
+      display: inline-block;
+    }
+  }
+  
+  @media (max-width: 1040px){
+    .mehal{
+      padding-bottom: 20px;
+    }
+    .navbar{
+      padding-bottom: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1040px){
+    .navbar{
+      display: flex;
+    }
+  }
+  
+  .mehal{
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .navdp{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .navbar-list{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .navbar{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 2vh 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    z-index: 2;
+  }
+  
+  .navbar ul li{
+    list-style: none;
+  
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+  
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+  
+
+/* CONTACT ME SECTION */
+
+.container {
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%; 
+    max-width: 400px; 
+    margin: auto ;
+    margin-top: 16vh;
+    margin-bottom: 16vh;
+}
+
+.chat{
+    margin: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #660033;
+  }
+  
+  .btn {
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #660033;
+    font-size: 19px;
+    padding: 10px 20px 10px 20px;
+    border-top: solid #660033 1px;
+    border-right: solid #660033 1px;
+    border-bottom: solid #660033 1px;
+    border-left: solid #660033 1px;
+    text-decoration: none;
+    margin: 40px auto;
+    background: #660033;
+    color: #fff
+  }
+  
+  .btn:hover {
+    color: #660033;
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  }
+  
+  /* FOOTER SECTION */
+  .footer-link{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 15px;
+  }
+  
+  .footer-link:hover{
+    color: #660033;
+  }
+  
+  .bottom-container{
+    background: url(https://learn.canva.com/wp-content/uploads/2020/02/removing-background-images_Unsplash.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+  }
+  
+  .copyright {
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 20px 0 5px;
+  }
+  
