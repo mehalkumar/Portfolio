@@ -1,0 +1,427 @@
+/* ULTIMATE */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 800px){
+  .banner{ 
+    min-height: 100vh;
+    height: max-content;
+  }
+
+  .navbar-list{
+    width: 100%;
+  }
+
+  .navdp{
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1040px){
+
+  .skill-row{
+    padding-top: 75px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 1040px) {
+  .skill-row {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 1040px){
+
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .skill-row{
+    width: 50%;
+    padding: 5%;
+    color: #660033;
+  }
+  
+  .skill-row p, h3{
+    text-align: left;
+    line-height: 2;
+  }
+  .art{
+    height: 120px;
+    width: auto;
+    margin-right: 30px;
+  }
+  
+  .design{
+    height: 120px;
+    width: auto;
+    margin-left: 30px;
+  }
+
+  .chicken{
+    height: 120px;
+    width: auto;
+    margin-right: 30px;
+  }
+}
+
+/* ---------------------NAVBAR CSS----------------------- */
+
+/* ULTIMATE */
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 540px){
+  .navbar ul li{
+    line-height: 2.5;
+  }  
+}
+
+@media screen and (min-width: 540px){
+  .navbar ul li{
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1040px){
+  .mehal{
+    padding-bottom: 20px;
+  }
+  .navbar{
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1040px){
+  .navbar{
+    display: flex;
+  }
+}
+
+.extrarec{
+  width: 100%;
+  height: 10px;
+  background-color: rgb(34, 34, 34);
+}
+
+.mehal{
+  height: 60px;
+  cursor: pointer;
+}
+
+.navdp{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navbar-list{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navbar{
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 2vh 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 34);
+  z-index: 2;
+}
+
+.navbar ul li{
+  list-style: none;
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 1px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+
+ /* Main Page Banner */
+.banner{ 
+  background: url(https://learn.canva.com/wp-content/uploads/2020/02/removing-background-images_Unsplash.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
+}
+
+.imgbg{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-text{
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.banner-text h1{
+  font-size: 130px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.banner-text p{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.banner-btn{
+  margin: 20px auto 0;
+  padding: 0 0 20px;
+}
+
+.banner-btn a{
+  text-decoration: none;
+  width: 150px;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: 0.5px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.banner-btn a span{
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+}
+
+.banner-btn a:hover span{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.banner-btn a:hover{
+  color: #660033;
+}
+
+.banner-text .welcome{
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.banner-text .but-text{
+  width: 500px;
+  font-size: 15px;
+  margin: 30px auto 60px;
+}
+
+/*Headings*/
+
+h2{
+  font-size: 2.4rem;
+  font-family: 'Kaushan Script', cursive;
+  margin: 30px;
+  color: #660033;
+}
+
+.Headings{
+  padding-top: 15vh;
+}
+
+/*Portfolio Works*/
+
+.portfolioHeadings{
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  margin: 12px;
+  color: #660033;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*Portfolio Slider*/
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+#portfolioid {
+  background-color: #82baad;
+}
+
+.portfolio-text {
+  padding-top: 5%;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.portfolio-image {
+  width: 200px;
+  border-radius: 10%;
+  margin: 1%;
+  padding: 15px;
+  background-color: rgb(255, 255, 255, 0.5) ;
+  transition: 0.5s;
+}
+
+.portfolio-image:hover {
+  width: 250px;
+}
+
+.viewall{
+  color: whitesmoke;
+  padding: 12px;
+  background-color: #2e7968;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.viewall:hover{
+  color: rgb(51, 137, 107);
+  text-decoration: none;
+  padding: 12px;
+  background-color: #c6eee5;
+  border-radius: 5px;
+}
+
+
+
+/*RESUME*/
+
+
+
+
+/* ABOUT SECTION */
+
+.skill-row{
+  width: 50%;
+  margin: 0px auto;
+  color: #660033;
+}
+
+.skill-row p, h3{
+  text-align: left;
+  line-height: 2;
+}
+.art{
+  height: 150px;
+  margin-right: 30px;
+}
+
+.design{
+  height: 150px;
+  margin-left: 30px;
+}
+
+.chicken{
+  height: 150px;
+  margin-right: 30px;
+}
+
+hr{
+  border: dotted #D9C7C8 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+/* CONTACT ME SECTION */
+
+.chat{
+  margin: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #660033;
+}
+
+.btn {
+  background: #ffffff;
+  border-radius: 0px;
+  font-family: 'Poppins', sans-serif;
+  color: #660033;
+  font-size: 19px;
+  padding: 10px 20px 10px 20px;
+  border: solid #660033 1px;
+  text-decoration: none;
+  margin: 40px auto;
+  background: #660033;
+  color: #fff
+}
+
+.btn:hover {
+  color: #660033;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  border-color: #660033;
+}
+
+/* FOOTER SECTION */
+.footer-link{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 15px;
+}
+
+.footer-link:hover{
+  color: #660033;
+}
+
+.bottom-container{
+  background: url(https://learn.canva.com/wp-content/uploads/2020/02/removing-background-images_Unsplash.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 20px 0 5px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Mehal's Site">
+  <meta name="description" content="This is Mehal Kumar Portfolio Website">
+  <meta name="keywords" content="HTML, CSS, Mehal's Site">
+  <meta name="author" content="Mehal Kumar">
+
+  <!-- Open Graph  -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://mehalkumar.github.io/Portfolio.mk/">
+   <meta property="og:title" content="Mehsl Kumar - Portfolio Website">
+   <meta property="og:description" content="This is the Portfolio of a UI UX Designer - Mehal Kumar">
+   <meta property="og:image" content="https://ibb.co/3yBMB4S">
+   
+  <!-- Title -->
+  <title>Mehal's Site</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="roomstyle.css" type="text/css">
+   
+    <!-- FAVICON -->
+  <link rel="icon" href="favicon.ico">
+
+ <!-- GOOGLE FONTS -->
+ <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+  <!-- JAVASCRIPT -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <!----- NAVBAR ----->
+  <div class="navbar">
+    <a class="navdp" href="/index.html"><img class="mehal" src="../images/dp.png" alt="Mehal-image"></a>
+    <ul class="navbar-list">
+      <li><a href="../Site.html">Home</a></li>
+      <li><a href="../PORTFOLIOWORK/portfolio.html">Portfolio</a></li>
+      <li><a href="../CV/cv.html">Resume</a></li>
+      <li><a href="../CONTACT ME/contactindex.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!----- MAIN ----->
+    <div class="main">
+       <div class="fixed-side">
+            <model-viewer src="./Assets/room.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.96" shadow-softness="0.81" exposure="0.81">
+            </model-viewer>
+       </div>
+       <div class="scrollable-side">
+            <h1 class="Hbottle">Room 3D Design</h1>
+            <div class="software">
+                <img src="./Assets/fusion.jpeg" alt="Fusion360Logo" width="25px">
+                <h3 class="contentpara">Autodesk Fusion360</h3>
+            </div>
+<br>
+             <p>
+             Designed my PG Room who I shared with a roommate. I have also added many assets inside the room which I made using Fusion360e.
+             </p>
+             <br>
+             <h2>Play to see the Details</h2>
+             <p>if the video is not playing <a href="Assets/Room - Mehal.mp4">Click Here</a></p>
+            <div class="fdiv">
+                <video src="Assets/Room - Mehal.mp4"></video>
+             </div>
+<br>
+    
+             <p>MEHAL KUMAR Product Design</p>
+
+       </div>
+    </div>
+    
+</body>
+</html>
