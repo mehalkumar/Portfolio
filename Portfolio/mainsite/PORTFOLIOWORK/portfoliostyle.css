@@ -1,0 +1,266 @@
+/* ULTIMATE */
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+  }
+
+  /*-------------Portfolio CSS-------------*/
+
+  #filters{
+    background-color: #660033;
+    padding-top: 20px;
+  
+  }
+
+  .filter{
+    color: whitesmoke;
+  }
+
+  .button{
+    margin: 10px;
+  }
+ 
+  .portfolioContainer {
+    width: 100%;
+    height: max-content;
+  }
+  
+  img.imgitem:hover{
+    opacity: 100%;
+    scale: 110%;
+  }
+  
+  img.imgitem{
+    height: 200px;
+    padding: 20px;
+    opacity: 60%;
+    transition: 0.5s;
+  }
+
+  .mainprojectimg{
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(72, 71, 71);
+    opacity: 60%;
+    transition: 0.5s;
+  }
+
+  img.mainprojectimg:hover{
+    opacity: 100%;
+    scale: 110%;
+  }
+
+  .name{
+    padding-top: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(152, 99, 134);
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.2);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: rgb(65, 22, 49);
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 20px;
+  display: block;
+    padding: 10px;
+    margin: auto;
+    width: 68%;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- grid ---- */
+
+.grid {
+  background-color: black;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---------------------NAVBAR CSS----------------------- */
+
+/* ULTIMATE */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 540px){
+  .navbar ul li{
+    line-height: 2.5;
+  }  
+}
+
+@media screen and (min-width: 540px){
+  .navbar ul li{
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1040px){
+  .mehal{
+    padding-bottom: 20px;
+  }
+  .navbar{
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1040px){
+  .navbar{
+    display: flex;
+  }
+}
+
+.mehal{
+  height: 60px;
+  cursor: pointer;
+}
+
+.navdp{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navbar-list{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navbar{
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 2vh 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 34);
+  z-index: 2;
+}
+
+.navbar ul li{
+  list-style: none;
+
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 1px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+
+ /* FOOTER SECTION */
+ .footer-link{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 15px;
+}
+
+.footer-link:hover{
+  color: #660033;
+}
+
+.bottom-container{
+  background: url(https://learn.canva.com/wp-content/uploads/2020/02/removing-background-images_Unsplash.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  text-align: center;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 20px 0 5px;
+}
+
